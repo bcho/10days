@@ -1,0 +1,20 @@
+html {
+    overflow: hidden;
+}
+
+.x_wrapper {
+    overflow: hidden;
+}
+
+.x_container {
+    overflow: hidden;
+    width: 1000%;
+}
+
+.x_item {
+    width: 9.99%;
+    height: 99.9%;
+    float: left;
+    display: inline;
+    border: 1px solid red;
+}
