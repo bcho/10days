@@ -1,6 +1,11 @@
+/* background setting */
+@import url(bg.css);
+
 html {
     overflow: hidden;
 }
+
+/* xrhyme settings */
 
 .x_wrapper {
     overflow: hidden;
@@ -16,5 +21,60 @@ html {
     height: 99.9%;
     float: left;
     display: inline;
-    border: 1px solid red;
+    padding: 0.01%;
+}
+
+/* mixins */
+.inset-text {
+    color: rgba(203, 63, 32, 0.85);
+    text-shadow: 1px 4px 6px #ed9682, 
+                 0 0 0 #000, 
+                 1px 4px 6px #ed9682;
+}
+
+.vintage {
+    text-shadow: 4px 4px 0 #eee,
+                 6px 6px 0 #cb3f20;
+}
+
+.anagly {
+    font-weight: 700;
+    color: #cb3f20;
+    text-shadow: 2px 2px 0 #eee,
+                 4px 4px 0 #cb3f20;
+}
+
+/* intro */
+#intro .inner {
+    position: relative;
+    width: 45%;
+    top: 20%;
+    left: 53%;
+    margin: 1%;
+    padding: 1%;
+}
+
+#intro .inner h1 {
+    display: block;
+    text-align: left;
+    font-size: 6.5em;
+    margin: 5% 2%;
+    padding: 1%;
+}
+
+#intro .inner h1 a {
+    color: #cb3f20;
+}
+
+#intro .inner h1 a span {
+    font-size: 1.7em;
+}
+
+#intro .q1,
+#intro .q2,
+#intro .q3 {
+    position: relative;
+    top: 70%;
+    margin: 1% 3%;
+    text-align: left;
 }
