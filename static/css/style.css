@@ -44,15 +44,14 @@ html {
                  4px 4px 0 #cb3f20;
 }
 
-/* nav */
-a.nav {
-    display: none;
-}
+/* x_nav */
+article a.x_nav { display: none; }
 
 /* questions */
 #q1,
 #q2,
-#q3 {
+#q3,
+#nav {
     position: absolute;
     margin-right: 10%;
     padding: 0.5% 1%;
@@ -73,13 +72,15 @@ a.nav {
 
 #q1 header,
 #q2 header,
-#q3 header {
+#q3 header,
+#nav header {
     margin-bottom: 1.1%;
 }
 
 #q1 header h3,
 #q2 header h3,
-#q3 header h3 {
+#q3 header h3,
+#nav header h3 a {
     font-size: 1.25em;
     color: #fefefe;
     text-align: center;
@@ -96,6 +97,16 @@ a.nav {
 
 #q3 {
     left: 71%;
+}
+
+#nav {
+    width: 3%;
+    left: 90%;
+    bottom: -1%;
+}
+
+#nav header h3 a {
+    font-size: 1.2em;
 }
 
 /* intro */
