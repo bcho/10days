@@ -44,6 +44,11 @@ html {
                  4px 4px 0 #cb3f20;
 }
 
+/* nav */
+a.nav {
+    display: none;
+}
+
 /* questions */
 #q1,
 #q2,
@@ -112,6 +117,7 @@ html {
 }
 
 #intro .inner h1 a {
+    display: block;
     color: #cb3f20;
 }
 

@@ -12,10 +12,23 @@
         if (name !== 'intro') {
             action = function(item) { $(item).fadeIn(); }
             do_queue(action);
+            readAnswer(name);
         } else {
             action = function(item) { $(item).fadeOut(); }
             do_queue(action);
         }
+    }
+
+    var readAnswer = function(name) {
+        var url = "json/" + name + ".json";
+
+        $.getJSON(url, function(result) {
+            var action = function(item) {
+                $(item + " div").html(result[item]);
+            }
+            do_queue(action);
+            adjust();
+        });
     }
 
     var adjust = function() {
@@ -46,12 +59,16 @@
             anchorMode: true,
             easing: 'easeInOutExpo',
             animeComplete: function() {
+                current = arguments[0];
 
                 // check if it is #intro
-                isDayX(arguments[0]);
+                isDayX(current);
+
+                // read answers
+                //readAnswer(current);
 
                 // adjust #q$ position
-                adjust();
+                //adjust();
             }
         }); 
     });
