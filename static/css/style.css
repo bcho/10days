@@ -44,6 +44,55 @@ html {
                  4px 4px 0 #cb3f20;
 }
 
+/* questions */
+#q1,
+#q2,
+#q3 {
+    position: absolute;
+    margin-right: 10%;
+    padding: 0.5% 1%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    width: 25%;
+    border-radius: 7px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition: .5s ease;
+}
+
+#q1 p,
+#q2 p,
+#q3 p {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+    color: #fefefe;
+}
+
+#q1 header,
+#q2 header,
+#q3 header {
+    margin-bottom: 1.1%;
+}
+
+#q1 header h3,
+#q2 header h3,
+#q3 header h3 {
+    font-size: 1.25em;
+    color: #fefefe;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#q1 {
+    left: 1%;
+}
+
+#q2 {
+    left: 36%;
+}
+
+#q3 {
+    left: 71%;
+}
+
 /* intro */
 #intro .inner {
     position: relative;
@@ -70,9 +119,9 @@ html {
     font-size: 1.7em;
 }
 
-#intro .q1,
-#intro .q2,
-#intro .q3 {
+#intro .i1,
+#intro .i2,
+#intro .i3 {
     position: relative;
     top: 70%;
     margin: 1% 3%;
