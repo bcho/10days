@@ -3,6 +3,7 @@
 
 html {
     overflow: hidden;
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Simsun, Tahoma, "Hiragino Sans GB", STHeiti !important;
 }
 
 /* xrhyme settings */
@@ -45,15 +46,25 @@ html {
 }
 
 /* x_nav */
-article a.x_nav { display: none; }
+article a.nav {
+    display: none;
+    width: 3%;
+    bottom: 0;
+    left: 91%;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 1.1em;
+    color: #fefefe;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 /* questions */
 #q1,
 #q2,
 #q3,
-#nav {
+.nav {
     position: absolute;
-    margin-right: 10%;
+    margin-right: 5%;
     padding: 0.5% 1%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
@@ -92,11 +103,11 @@ article a.x_nav { display: none; }
 }
 
 #q2 {
-    left: 36%;
+    left: 31%;
 }
 
 #q3 {
-    left: 71%;
+    left: 61%;
 }
 
 #nav {

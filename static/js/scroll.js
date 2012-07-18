@@ -7,12 +7,15 @@
 
     var isDayX = function(name) {
         var q = ['#q1', '#q2', '#q3'];
-        var action;
         if (name !== 'intro' && name !== 'ending') {
-            //do_queue(q, action);
+            $('.nav').hide();
+            console.log('#' + name + ' .nav');
+            $('#' + name + ' .nav').show();
+            $('#' + name + ' .nav').css({display: 'block'});
             readAnswer(name);
         } else {
-            action = function(item) { $(item).fadeOut(); }
+            $('.nav').fadeOut();
+            var action = function(item) { $(item).fadeOut(); }
             do_queue(q, action);
         }
     }
