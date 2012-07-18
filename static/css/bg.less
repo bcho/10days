@@ -1,0 +1,15 @@
+@path: '../images/big/';
+@suffix: '.jpg';
+
+.day_bg(@index) {
+    @url: "@{path}@{index}@{suffix}";
+    background: center url(@url);
+}
+
+.dayX(@index) when (@index > 0) {
+    (~"#day@{index}") { .day_bg(@index); }
+    .dayX(@index - 1);
+}
+.dayX(0) {}
+
+.dayX(9);
