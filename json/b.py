@@ -46,7 +46,7 @@ def _main():
     build_day_name = lambda x: 'Day ' + str(x)
     build_nav_name = lambda x: '#day' + str(x - 1) if x > 1 else '#intro'
 
-    for i in range(1, 10):
+    for i in xrange(1, 11):
         in_name = build_in_name(i)
         out_name = build_out_name(i)
         day_name = build_day_name(i)
